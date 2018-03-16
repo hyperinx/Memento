@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_create_event"
+            android:icon="@drawable/ic_note_add"
+            android:title="@string/nav_create_event" />
+
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_people"
+            android:title="@string/nav_friends" />
+
+        <item
+            android:id="@+id/nav_blocked_users"
+            android:icon="@drawable/ic_lock"
+            android:title="@string/nav_blocked_users" />
+    </group>
+
+    <item android:title="Prefferences">
+        <menu>
+            <item
+                android:id="@+id/nav_user_account_settings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/nav_user_account_settings" />
+            <item
+                android:id="@+id/nav_app_settings"
+                android:icon="@drawable/ic_settings_applications"
+                android:title="@string/nav_app_settings" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="none"
+        android:id="@+id/menu_nav_temp_gid"
+        >
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app"
+            android:title="@string/logout" />
+    </group>
+
+
+</menu>
